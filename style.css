@@ -1,0 +1,131 @@
+body{
+    background-image: url(index1.jpeg);
+    background-color:paleturquoise ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.navbar{
+    background-image: url(imavvges.jpeg);
+    background-color: bisque;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0px;
+    margin: 50px 50px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bgblur 2s
+}
+.navbar ul{
+    display : flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    list-style-type: none;
+    animation: bgblur 3s;
+}
+.list{
+    background-color:rgb(226, 144, 208);
+    cursor: pointer;
+}
+.list1{
+        background-color:rgb(197, 153, 218);
+
+}
+h1{
+    color: rgb(184, 50, 124);
+    font-size: 50;
+    animation: bgblur 3s;
+    
+
+}
+
+p{
+    align-items: center;
+    color: rgb(187, 44, 180);
+    font-size: 30;
+}
+h3{
+    color: rgb(189, 62, 194);
+    font-size: 25;
+}
+label
+{
+    font-size: 20;
+    color: rgb(42, 6, 66);
+}
+button
+{
+    font-size: 20;
+    color: rgb(160, 18, 113);
+    cursor: pointer;
+}
+.navbar li:hover{
+    transform: translateY(10px);
+    transition: .1s ease;
+    color:crimson
+}
+img:hover{
+    transform: scale(105%);
+    transition: 2s ease;
+    border-radius: 200px;
+    border-style: dotted;
+
+    
+}
+form{
+    
+    background-color:rgb(173, 126, 173);
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.about{
+    color: rgb(7, 58, 43);
+ 
+    width: 500;
+}
+.contact{
+    color: rgb(7, 58, 43);
+    width: 500;
+    
+}
+.how{
+    background-color: rgb(207, 191, 218);
+}
+.age{
+    background-color: rgb(207, 191, 218);
+
+}
+.breed{
+    background-color: rgb(207, 191, 218);
+}
+.signup{
+    background-color: rgb(207, 191, 218);
+    width: 500;
+}
+.phone{
+    background-color: rgb(207, 191, 218);
+}
+.email{
+    background-color: rgb(207, 191, 218);
+}
+.listitem
+{
+    background-color: rgb(228, 174, 228);
+    
+}
+@keyframes bgblur{
+    0%{
+        background-color:blue;
+transform: translateY(100px);
+        
+    }
+    100%{
+    background-color: chartreuse;
+    transform: translateY(10px);
+            visibility: visible;
+
+}}

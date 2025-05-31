@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>
+        CALCULATOR
+    </title>
+
+<body>
+    <div>
+        <form>
+            <label>
+                enter the first number
+            </label>
+            <input id="first"></br>
+            <label> 
+                enter the second number
+            </label>
+            <input id="second"></br>
+
+            <select id="operator">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <button onclick="calculate()">submit</button>
+            <h2>Result:</h2>
+            <h1 id="resulttext"></h1>
+            <a href="../index.html"><img src="go-back-arrow.svg" height="100">
+                
+            </a>
+
+        </form>
+    </div>
+    <script>
+        function calculate() {
+
+            let n1 = parseInt(document.getElementById("first").value);
+            console.log(n1);
+            let n2 = parseFloat(document.getElementById("second").value);
+            console.log(n2);
+
+            let op = document.getElementById("operator").value;
+            var result = 0;
+            if (op == "+") {
+                result = n1 + n2;
+            }
+            else if (op == "-") {
+                result = n1 - n2;
+            }
+            else if (op == "*") {
+                result = n1 * n2;
+            }
+            else {
+                result = n1 / n2;
+            }
+            document.getElementById("reasultText").innerText = result;
+            event.preventDefault();
+
+
+        }
+        console.log(n1,op,n2,"=",result)
+    </script>
+</body>
+</head>
+
+</html>
